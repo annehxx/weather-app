@@ -54,10 +54,6 @@ body {
     cursor: pointer;
 }
 
-i {
-    width: 60px;
-}
-
 .spline {
     height: 400px;
 }
@@ -85,4 +81,12 @@ i {
     display: flex;
     align-items: center;
     text-align: left;
+}
+
+.fa {
+    width: 60px;
+}
+
+.col .fa {
+    font-size: 2rem;
 }
