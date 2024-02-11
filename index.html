@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App - Anne Heinrich</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Search for city" spellcheck="false" />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+
+      <div class="weather">
+        <div class="spline">
+          <spline-viewer
+            url="https://prod.spline.design/CQJDuklFNvXALztc/scene.splinecode"
+          ></spline-viewer>
+        </div>
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <i class="fa fa-water"></i>
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <i class="fa fa-wind"></i>
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0ae3828fd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"
+    ></script>
+  </body>
 </html>
