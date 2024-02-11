@@ -18,7 +18,7 @@ body {
     background: rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(10px);
     color: white;
-    margin: 100px auto 0;
+    margin: 150px auto;
     border-radius: 2rem;
     padding: 40px 35px;
     text-align: center;
@@ -67,6 +67,11 @@ body {
     font-size: 3rem;
     font-weight: 400;
     margin-top: 1rem;
+}
+
+.weather-icon {
+    width: 200px;
+    height: 200px;
 }
 
 .details {

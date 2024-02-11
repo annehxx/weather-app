@@ -5,7 +5,7 @@ const apiUrl =
 const search = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 
-const weatherIcon = document.querySelector(".spline");
+const weatherIcon = document.querySelector(".weather-icon");
 
 const body = document.querySelector("body");
 
@@ -23,23 +23,28 @@ async function checkWeather(city) {
 
   if (data.weather[0].main == "Clouds") {
     document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_cloudy_day_1.jpg')";
+    weatherIcon.src = "images/cloudy.png";
     
   }
   
   if(data.weather[0].main === "Rain") {
     document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_rainy_cloudy_d_1.jpg')";
+    weatherIcon.src = "images/rain.png";
   }
 
   if(data.weather[0].main === "Clear") {
     document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_sunny_day_1.jpg')";
+    weatherIcon.src = "images/clear.png";
+
   }
 
   if(data.weather[0].main === "Drizzle") {
     document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_rainy_cloudy_d_1.jpg')";
+    weatherIcon.src = "images/rain.png";
   }
 
   if(data.weather[0].main === "Mist") {
-    document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_mist_fog_day_i_1.jpg')";
+    weatherIcon.src = "images/mist.png";
   }
 }
 
