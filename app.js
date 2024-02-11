@@ -44,6 +44,7 @@ async function checkWeather(city) {
   }
 
   if(data.weather[0].main === "Mist") {
+    document.body.style.backgroundImage = "url('images/Default_high_quality_high_detailed_illustration_mist_fog_day_i_1.jpg')";
     weatherIcon.src = "images/mist.png";
   }
 }
