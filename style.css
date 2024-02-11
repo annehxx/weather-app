@@ -58,6 +58,10 @@ body {
     height: 400px;
 }
 
+.weather {
+    display: none;
+}
+
 .weather h1 {
     font-size: 5rem;
     font-weight: 500;

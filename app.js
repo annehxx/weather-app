@@ -6,6 +6,7 @@ const search = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 
 const weatherIcon = document.querySelector(".weather-icon");
+const weather = document.querySelector(".weather");
 
 const body = document.querySelector("body");
 
@@ -50,5 +51,6 @@ async function checkWeather(city) {
 }
 
 searchBtn.addEventListener("click", () => {
+  weather.style.display = "block";
   checkWeather(search.value);
 });
